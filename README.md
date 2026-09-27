@@ -39,54 +39,6 @@
 │           ├── DocumentLayout.backup.json
 │           ├── DocumentLayout.json
 │           └── Solution.VC.db
-├── packages/
-│   └── Microsoft.ML.OnnxRuntime.1.30.0/
-│       ├── build/
-│       │   ├── native/
-│       │   │   ├── include/
-│       │   │   ├── Microsoft.ML.OnnxRuntime.props
-│       │   │   └── Microsoft.ML.OnnxRuntime.targets
-│       │   ├── net9.0-android35.0/
-│       │   │   └── Microsoft.ML.OnnxRuntime.targets
-│       │   ├── net9.0-ios18.0/
-│       │   │   └── Microsoft.ML.OnnxRuntime.targets
-│       │   ├── net9.0-maccatalyst18.0/
-│       │   │   └── _._
-│       │   ├── netstandard2.0/
-│       │   │   ├── Microsoft.ML.OnnxRuntime.props
-│       │   │   └── Microsoft.ML.OnnxRuntime.targets
-│       │   └── netstandard2.1/
-│       │       ├── Microsoft.ML.OnnxRuntime.props
-│       │       └── Microsoft.ML.OnnxRuntime.targets
-│       ├── buildTransitive/
-│       │   ├── net9.0-android35.0/
-│       │   │   └── Microsoft.ML.OnnxRuntime.targets
-│       │   ├── net9.0-ios18.0/
-│       │   │   └── Microsoft.ML.OnnxRuntime.targets
-│       │   └── net9.0-maccatalyst18.0/
-│       │       └── _._
-│       ├── runtimes/
-│       │   ├── android/
-│       │   │   └── native/
-│       │   ├── ios/
-│       │   │   └── native/
-│       │   ├── linux-arm64/
-│       │   │   └── native/
-│       │   ├── linux-x64/
-│       │   │   └── native/
-│       │   ├── osx-arm64/
-│       │   │   └── native/
-│       │   ├── win-arm64/
-│       │   │   └── native/
-│       │   └── win-x64/
-│       │       └── native/
-│       ├── .signature.p7s
-│       ├── LICENSE
-│       ├── Microsoft.ML.OnnxRuntime.1.30.0.nupkg
-│       ├── ORT_icon_for_light_bg.png
-│       ├── Privacy.md
-│       ├── README.md
-│       └── ThirdPartyNotices.txt
 ├── x64/
 │   └── Debug/
 │       ├── Roxy_detector.exe
@@ -109,6 +61,7 @@
 Microsoft.ML.OnnxRuntime 1.30.0
 ```
 NuGet 会自动配置头文件、链接库，并在生成时复制 `onnxruntime.dll`。<br>
+在库中我没有上传，可以参考https://onnxruntime.ai/docs/get-started/with-cpp.html<br>
 
 ## 可识别类别示例
 模型支持 COCO 数据集中的 80 类物体，常用类别包括：<br>
